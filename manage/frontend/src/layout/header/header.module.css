@@ -1,0 +1,10 @@
+.wrapper {
+  background: #D5DBDB;
+}
+
+.wrapper h3 {
+  color: var(--primary-text-color);
+  font-weight: var(--h3-primary-fontweight);
+  padding: 1rem 0rem;
+  text-align: center;
+}

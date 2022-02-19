@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import 'antd/dist/antd.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+}
+
+.container {
+  padding: 0rem 5rem;
+}
+
+:root {
+  --primary-text-color: #3f3844;
+  --h3-primary-fontweight: 800;
+  --h3-secondary-fontweight: 700;
+}

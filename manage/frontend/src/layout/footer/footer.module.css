@@ -1,0 +1,8 @@
+.wrapper {
+  background: #D5DBDB;
+}
+
+.wrapper p {
+  padding: 10px 0px;
+  color: var(--primary-text-color);
+}
