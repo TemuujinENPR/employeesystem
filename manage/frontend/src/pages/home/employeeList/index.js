@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Card, Button, Table, Drawer, Input, Form, Divider, Radio, Row, Col, message } from 'antd'
 import { PlusOutlined } from '@ant-design/icons'
 
 import styles from './employeeList.module.css'
 
 const EmployeeList = () => {
+
+  const navigate = useNavigate()
 
   const [form] = Form.useForm()
   const [loading, setLoading] = useState(false)
@@ -37,7 +40,11 @@ const EmployeeList = () => {
       body: JSON.stringify(employee)
     })
     .then(() => {
-      message.success('Шинэ ажилтны мэдээлэл амжилттай нэмэгдлээ')
+      if (!employee.firstName) {
+        message.warning('Ажилтны мэдээлэл хоосон байна')
+      } else {
+        message.success('Шинэ ажилтны мэдээлэл амжилттай нэмэгдлээ')
+      }
     })
   }
   
